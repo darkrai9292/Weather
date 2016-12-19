@@ -1,4 +1,4 @@
-import JSON
+#import JSON
 import sqlite3
 
 ##DATES IN THE FORMAT 'DD-MM-YY'
@@ -8,7 +8,7 @@ import sqlite3
 
 conn = sqlite3.connect('weather.db')
 db = conn.cursor()
-print("Database Connected Succesfully")
+print("Database Connected Successfully")
 
 #Used once to create the database
 def init():

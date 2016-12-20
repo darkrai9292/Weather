@@ -3,7 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <title>Weather Data</title>
+    <script>
+    var resp = "";
 
+    function loadData() {
+        var weatherData = JSON.parse(resp);
+        var body = document.getElementsByTagName('body')[0];
+        var table = document.createElement('table');
+        var tbdy = document.createElement('tbody');
+
+        for(var i = 0; i<weatherData.length; i++) {
+            var dict = weatherData[i];
+            var tr = document.createElement('tr');
+
+            var td0 = document.createElement('td');
+            td0.innerHTML = dict.id;
+
+            var td1 = document.createElement('td');
+            td1.innerHTML = dict.date;
+
+            var td2 = document.createElement('td');
+            td2.innerHTML = dict.bearing;
+
+            var td3 = document.createElement('td');
+            td3.innerHTML = dict.windspeed;
+
+            var td4 = document.createElement('td');
+            td4.innerHTML = dict.tempurature;
+
+            tr.appendChild(td0);
+            tr.appendChild(td1);
+            tr.appendChild(td2);
+            tr.appendChild(td3);
+            tr.appendChild(td4);
+
+            tbdy.appendChild(tr);
+        }
+
+        table.appendChild(tbdy);
+        body.appendChild(table);
+
+    }
+
+    function reqListener() {
+        resp = this.responseText;
+        loadData();
+    }
+
+    var req = new XMLHttpRequest();
+    req.addEventListener("load", reqListener);
+    req.open("GET", "weather");
+    req.send();
+
+    </script>
     <style>
 
     </style>

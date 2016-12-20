@@ -18,7 +18,7 @@ while True:
     request = client_connection.recv(1024)
     print(request)
 
-    http_response = "HTTP/1.1 200 OK\n"
+    http_response = "HTTP/1.1 200 OK\n\n"
     http_response += htmldata
     print(htmldata)
     client_connection.sendall(http_response.encode('utf-8'))

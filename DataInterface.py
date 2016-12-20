@@ -32,7 +32,7 @@ def insert_data(date, bearing, windspeed, temperature):
 ##If given string with date information, will return records relating to that date entry
 
 date = input("Enter lookup date or leave blank for default")
-num_records = input("How many records do you wish to see?")
+num_records = input("How many records do you wish to see? Type zero for default")
 sign_value = input("Do you wish to see the latest (L) or the first (F) records?")
 
 if sign_value == 'L':
@@ -42,7 +42,7 @@ elif sign_value == 'F':
     index = (-1) * num_records
 
 
-def get_records(date="", index=0):
+def get_records(date, index):
     rows = ()
     if(index > 0):
         rows = db.execute("SELECT * FROM WEATHER ORDER BY ID DESC LIMIT ", index, ";")

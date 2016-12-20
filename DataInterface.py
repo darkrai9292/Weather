@@ -22,14 +22,25 @@ TEMPURATURE REAL);''')
 
 #INSERTING Data into the Database, function used requires Units:
 ##date - string, bearing - int in degrees, windspeed - float in m/s, tempurature - float in degrees Celsius
-def insert_data(date, bearing, windspeed, tempurature):
-    db.execute("INSERT INTO WEATHER VALUES ('", db.lastrowid, ", ", date, "', ", bearing, ", ", windspeed, ", ", tempurature, ");")
+def insert_data(date, bearing, windspeed, temperature):
+    db.execute("INSERT INTO WEATHER VALUES ('", db.lastrowid, ", ", date, "', ", bearing, ", ", windspeed, ", ", temperature, ");")
     db.commit()
 
 #GETTING records from database and returning them in the form of tuples
 ##If function receives positive number, will return latest x entries
 ##If function receives negative number, will return first x entries
 ##If given string with date information, will return records relating to that date entry
+
+date = input("Enter lookup date or leave blank for default")
+num_records = input("How many records do you wish to see?")
+sign_value = input("Do you wish to see the latest (L) or the first (F) records?")
+
+if sign_value == 'L':
+    index = num_records
+
+elif sign_value == 'F':
+    index = (-1) * num_records
+
 
 def get_records(date="", index=0):
     rows = ()
@@ -43,7 +54,7 @@ def get_records(date="", index=0):
 
     return rows
 
-#Closes the database, please use or esle will throw errors and create problems
+#Closes the database, please use or else will throw errors and create problems
 def close():
     db.commit()
     db.close()

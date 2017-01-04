@@ -30,7 +30,7 @@ def insert_data(date, bearing, windspeed, tempurature):
 ##If function receives positive number, will return latest x entries
 ##If function receives negative number, will return first x entries
 ##If given string with date information, will return records relating to that date entry
-
+#JUST HERE FOR GIT TO FORCE UPDATE
 def get_records(date="", index=0):
     rows = ()
     if(index > 0):

@@ -1,5 +1,5 @@
 import socket
-import threading
+import DataInterface
 
 HOST, PORT = '', 8000
 
@@ -16,11 +16,15 @@ print("Listening on port", PORT)
 while True:
     client_connection, client_address = listen_socket.accept()
     request = client_connection.recv(1024)
-    print(request)
+    print(request[5:12])
 
-    http_response = "HTTP/1.1 200 OK\n\n"
-    http_response += htmldata
-    print(htmldata)
+    if request[5:12] == b'weather':
+        http_response = "HTTP/1.1 200 OK\n\n"
+        http_response += DataInterface.get_records(4)
+        print("Sending Weather Data")
+    else:
+        http_response = "HTTP/1.1 200 OK\n\n"
+        http_response += htmldata
     client_connection.sendall(http_response.encode('utf-8'))
     client_connection.close()
 

@@ -61,6 +61,81 @@
     </style>
 </head>
 <body>
-    Test
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+            <link rel="stylesheet" type="text/css" href="css/demo.css" />
+            <link rel="stylesheet" type="text/css" href="css/component.css" />
+
+    <script src ="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src= "htmltabletojson.js"></script>
+    <script src= "data.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function()
+    {
+        $(".getJdata").click(function()
+        {
+            var strTable;
+            strTable = '';
+            strTable += '<table border = "2" class = "table table-hover tbldata" style= "padding:10px">'
+            strTable += '<tr>';
+            strTable += '<th >id</th>';
+            strTable += '<th >first name</th>';
+            strTable += '<th >last name</th>';
+            strTable += '<th >email</th>';
+            strTable += '<th >gender</th>';
+
+            strTable += '<th >ip</th>';
+            strTable += '</tr>';
+
+            $.each(JData, function(i, field)
+            {
+                d= JData[i]['id'];
+                strTable += '<tr>';
+                strTable += '<td >'+JData[i]['id']+ '</td>';
+                strTable += '<td >'+JData[i]['first_name']+ '</td>';
+                strTable += '<td >'+JData[i]['last_name']+ '</td>';
+                strTable += '<td >'+JData[i]['email']+ '</td>';
+                strTable += '<td >'+JData[i]['gender']+ '</td>';
+                strTable += '<td >'+JData[i]['ip_adress']+ '</td>';
+                strTable += '</tr>';
+            });
+
+            strTable += '</table>';
+            var Frm = '';
+            Frm += '<br><br>';
+            Frm += '<div class="form-group form-inline btndiv">';
+
+            Frm += '<label for="exampleInputName2">Look Name Rec</label>';
+            Frm += '<input type="text" class="form-control" id="lookup">';
+            Frm += '<button type ="submit" class="btn btn-default btnlookup">Get First Name Rec</button>';
+            Frm += '</div>';
+
+           $("#ScreenData").html(Frm+strTable);
+        });
+
+        $("#ScreenData").on("click", ".btnlookup", function(){
+
+            var Val = $('#lookup').val();
+            var JData = $('.tbldata').tableToJSON();
+            var d = '';
+            $.each(JData, function(i, field)
+            {
+                if(JData[i]['firstname'] == Val)
+                {
+                    d += '<div class="panel panel-success msgpost"> id = '+JData[i]['id']+'</div>';
+                    console.log(d);
+                }
+            });
+        });
+        $('.msgpost').remove();
+        $('.btndiv').after(d );
+    });
+
+    </script>
+    <h1> HTML Table To Json Data </h1>
+    <br><br>
+    <button type="button" class="btn btn-primary getJdata">
+        Get JSON data</button>
+    <div id="ScreenData" style="padding:10px"></div>
 </body>
 </html>

@@ -51,7 +51,6 @@ def get_records(index=0):
         table['tampurature'] = row[4]
 
     json_table = json.dumps(table)
-
     return json_table
 
 #Closes the database, please use or esle will throw errors and create problems

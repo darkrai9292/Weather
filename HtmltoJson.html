@@ -72,25 +72,24 @@ $(document).ready(function()
 		strTable = '';
 		strTable += '<table border = "2" class = "table table-hover tbldata" style= "padding:10px">'
 		strTable += '<tr>';
-		strTable += '<th >id</th>';
-		strTable += '<th >first name</th>';
-		strTable += '<th >last name</th>';
-		strTable += '<th >email</th>';
-		strTable += '<th >gender</th>';
-
-		strTable += '<th >ip</th>';
+		strTable += '<th >Datetime</th>';
+		strTable += '<th >Temperature (C)</th>';
+		strTable += '<th >Temperature (F)</th>';
+		strTable += '<th >Wind speed (m/s)</th>';
+		strTable += '<th >Wind speed (mph)</th>';
+        strTable += '<th >Wind bearing</th>';
 		strTable += '</tr>';
 
 		$.each(JData, function(i, field)
 		{
 			d= JData[i]['id'];
 			strTable += '<tr>';
-			strTable += '<td >'+JData[i]['id']+ '</td>';
-			strTable += '<td >'+JData[i]['first_name']+ '</td>';
-			strTable += '<td >'+JData[i]['last_name']+ '</td>';
-			strTable += '<td >'+JData[i]['email']+ '</td>';
-			strTable += '<td >'+JData[i]['gender']+ '</td>';
-			strTable += '<td >'+JData[i]['ip_address']+ '</td>';
+			strTable += '<td >'+JData[i]['Datetime']+ '</td>';
+			strTable += '<td >'+JData[i]['Temperature (C)']+ '</td>';
+			strTable += '<td >'+JData[i]['Temperature (F)']+ '</td>';
+			strTable += '<td >'+JData[i]['Wind speed (m/s)']+ '</td>';
+			strTable += '<td >'+JData[i]['Wind speed (mph)']+ '</td>';
+			strTable += '<td >'+JData[i]['Wind bearing']+ '</td>';
 			strTable += '</tr>';
 		});
 
@@ -99,9 +98,9 @@ $(document).ready(function()
 		Frm += '<br><br>';
 		Frm += '<div class="form-group form-inline btndiv">';
 
-		Frm += '<label for="exampleInputName2">Look Name Rec</label>';
+		Frm += '<label for="exampleInputName2">Look up Datetime value</label>';
 		Frm += '<input type="text" class="form-control" id="lookup">';
-		Frm += '<button type ="submit" class="btn btn-default btnlookup">Get First Name Rec</button>';
+		Frm += '<button type ="submit" class="btn btn-default btnlookup">Get Record</button>';
 		Frm += '</div>';
 
 	   $("#ScreenData").html(Frm+strTable);
@@ -114,9 +113,9 @@ $(document).ready(function()
 		var d = '';
 		$.each(JData, function(i, field)
 		{
-			if(JData[i]['firstname'] == Val)
+			if(JData[i]['Datetime'] == Val)
 			{
-				d += '<div class="panel panel-success msgpost"> id = '+JData[i]['id']+'</div>';
+				d += '<div class="panel panel-success msgpost"> id = '+JData[i]['Datetime']+'</div>';
 				console.log(d);
 			}
 		});
@@ -126,8 +125,8 @@ $(document).ready(function()
 });
 
 </script>
-<h1> HTML Table To Json Data </h1>
+<h1> Weather Data</h1>
 <br><br>
 <button type="button" class="btn btn-primary getJdata">
-	Get JSON data</button>
+	Get data</button>
 <div id="ScreenData" style="padding:10px"></div>

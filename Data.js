@@ -1,39 +1,38 @@
-var JData = 
-[{"id":1,"first_name":"Gary","last_name":"Torres","email":"gtorres0@gov.uk","gender":"Male","ip_address":"41.143.230.63"},
-{"id":2,"first_name":"Pamela","last_name":"Cooper","email":"pcooper1@hc360.com","gender":"Female","ip_address":"102.197.51.17"},
-{"id":3,"first_name":"Sandra","last_name":"Scott","email":"sscott2@ft.com","gender":"Female","ip_address":"243.246.190.43"},
-{"id":4,"first_name":"Jimmy","last_name":"Hawkins","email":"jhawkins3@examiner.com","gender":"Male","ip_address":"118.205.48.39"},
-{"id":5,"first_name":"Philip","last_name":"Spencer","email":"pspencer4@surveymonkey.com","gender":"Male","ip_address":"206.180.196.71"},
-{"id":6,"first_name":"Irene","last_name":"Hansen","email":"ihansen5@apple.com","gender":"Female","ip_address":"164.242.252.13"},
-{"id":7,"first_name":"Judith","last_name":"Warren","email":"jwarren6@godaddy.com","gender":"Female","ip_address":"54.178.226.196"},
-{"id":8,"first_name":"Thomas","last_name":"Sanders","email":"tsanders7@seattletimes.com","gender":"Male","ip_address":"134.94.72.73"},
-{"id":9,"first_name":"Melissa","last_name":"Thomas","email":"mthomas8@ucla.edu","gender":"Female","ip_address":"244.92.200.186"},
-{"id":10,"first_name":"Carl","last_name":"Mendoza","email":"cmendoza9@istockphoto.com","gender":"Male","ip_address":"174.29.239.31"},
-{"id":11,"first_name":"Matthew","last_name":"Garza","email":"mgarzaa@nymag.com","gender":"Male","ip_address":"249.99.187.131"},
-{"id":12,"first_name":"Roger","last_name":"Cole","email":"rcoleb@seattletimes.com","gender":"Male","ip_address":"207.116.168.166"},
-{"id":13,"first_name":"Evelyn","last_name":"Jackson","email":"ejacksonc@bbc.co.uk","gender":"Female","ip_address":"40.38.14.149"},
-{"id":14,"first_name":"Justin","last_name":"Weaver","email":"jweaverd@wix.com","gender":"Male","ip_address":"217.120.158.102"},
-{"id":15,"first_name":"Matthew","last_name":"Riley","email":"mrileye@nih.gov","gender":"Male","ip_address":"224.71.167.89"},
-{"id":16,"first_name":"Clarence","last_name":"Black","email":"cblackf@nbcnews.com","gender":"Male","ip_address":"223.162.95.184"},
-{"id":17,"first_name":"Susan","last_name":"Garza","email":"sgarzag@dot.gov","gender":"Female","ip_address":"68.40.42.7"},
-{"id":18,"first_name":"Beverly","last_name":"Robinson","email":"brobinsonh@pcworld.com","gender":"Female","ip_address":"147.155.88.65"},
-{"id":19,"first_name":"Marie","last_name":"Knight","email":"mknighti@nydailynews.com","gender":"Female","ip_address":"6.4.217.47"},
-{"id":20,"first_name":"Brenda","last_name":"Gray","email":"bgrayj@harvard.edu","gender":"Female","ip_address":"170.205.215.173"},
-{"id":21,"first_name":"Billy","last_name":"Chavez","email":"bchavezk@myspace.com","gender":"Male","ip_address":"143.98.115.154"},
-{"id":22,"first_name":"Richard","last_name":"Reynolds","email":"rreynoldsl@weibo.com","gender":"Male","ip_address":"242.174.96.32"},
-{"id":23,"first_name":"Jimmy","last_name":"Jones","email":"jjonesm@shutterfly.com","gender":"Male","ip_address":"199.43.226.184"},
-{"id":24,"first_name":"Sharon","last_name":"Griffin","email":"sgriffinn@angelfire.com","gender":"Female","ip_address":"35.89.174.93"},
-{"id":25,"first_name":"Ruby","last_name":"Hunt","email":"rhunto@macromedia.com","gender":"Female","ip_address":"41.109.7.79"},
-{"id":26,"first_name":"Cheryl","last_name":"Turner","email":"cturnerp@jigsy.com","gender":"Female","ip_address":"128.144.39.40"},
-{"id":27,"first_name":"Cynthia","last_name":"Ryan","email":"cryanq@facebook.com","gender":"Female","ip_address":"160.105.5.12"},
-{"id":28,"first_name":"Jennifer","last_name":"Baker","email":"jbakerr@sbwire.com","gender":"Female","ip_address":"82.136.7.114"},
-{"id":29,"first_name":"Johnny","last_name":"Kelley","email":"jkelleys@toplist.cz","gender":"Male","ip_address":"206.144.213.129"},
-{"id":30,"first_name":"Jeffrey","last_name":"Fernandez","email":"jfernandezt@seesaa.net","gender":"Male","ip_address":"122.229.70.188"},
-{"id":31,"first_name":"Scott","last_name":"Fernandez","email":"sfernandezu@twitter.com","gender":"Male","ip_address":"44.164.229.183"},
-{"id":32,"first_name":"Wayne","last_name":"Owens","email":"wowensv@mail.ru","gender":"Male","ip_address":"210.209.66.132"},
-{"id":33,"first_name":"Roger","last_name":"White","email":"rwhitew@acquirethisname.com","gender":"Male","ip_address":"184.119.107.13"},
-{"id":34,"first_name":"Joshua","last_name":"Carter","email":"jcarterx@g.co","gender":"Male","ip_address":"59.188.129.89"},
-{"id":35,"first_name":"Keith","last_name":"Mcdonald","email":"kmcdonaldy@artisteer.com","gender":"Male","ip_address":"173.123.244.152"},
-{"id":36,"first_name":"Doris","last_name":"Graham","email":"dgrahamz@linkedin.com","gender":"Female","ip_address":"106.14.11.156"},
-{"id":37,"first_name":"James","last_name":"Elliott","email":"jelliott10@yahoo.com","gender":"Male","ip_address":"248.197.111.48"},
-{"id":38,"first_name":"Joshua","last_name":"Marshall","email":"jmarshall11@tuttocitta.it","gender":"Male","ip_address":"150.171.217.167"}];
+{"Datetime":"1:16 AM","wind_speed (m/s)":94.77,"Temperature C":100,"wind bearing":116,"wind speed (mph)":85.91,"Temperature F":93}
+{"Datetime":"12:40 AM","wind_speed (m/s)":90.81,"Temperature C":47,"wind bearing":15,"wind speed (mph)":28.64,"Temperature F":29}
+{"Datetime":"7:10 PM","wind_speed (m/s)":84.95,"Temperature C":42,"wind bearing":286,"wind speed (mph)":37.1,"Temperature F":29}
+{"Datetime":"6:09 AM","wind_speed (m/s)":55.6,"Temperature C":40,"wind bearing":135,"wind speed (mph)":40.77,"Temperature F":100}
+{"Datetime":"11:14 PM","wind_speed (m/s)":61.92,"Temperature C":-17,"wind bearing":195,"wind speed (mph)":72.61,"Temperature F":-10}
+{"Datetime":"11:44 PM","wind_speed (m/s)":33.27,"Temperature C":16,"wind bearing":215,"wind speed (mph)":10.3,"Temperature F":91}
+{"Datetime":"8:55 AM","wind_speed (m/s)":29.07,"Temperature C":37,"wind bearing":285,"wind speed (mph)":15.79,"Temperature F":40}
+{"Datetime":"11:52 PM","wind_speed (m/s)":80.17,"Temperature C":39,"wind bearing":207,"wind speed (mph)":16.6,"Temperature F":20}
+{"Datetime":"12:35 AM","wind_speed (m/s)":57.0,"Temperature C":60,"wind bearing":181,"wind speed (mph)":85.94,"Temperature F":28}
+{"Datetime":"10:38 PM","wind_speed (m/s)":39.8,"Temperature C":22,"wind bearing":16,"wind speed (mph)":77.11,"Temperature F":48}
+{"Datetime":"1:17 AM","wind_speed (m/s)":95.57,"Temperature C":11,"wind bearing":220,"wind speed (mph)":80.85,"Temperature F":63}
+{"Datetime":"3:21 PM","wind_speed (m/s)":21.86,"Temperature C":44,"wind bearing":145,"wind speed (mph)":18.76,"Temperature F":30}
+{"Datetime":"4:28 PM","wind_speed (m/s)":79.56,"Temperature C":36,"wind bearing":118,"wind speed (mph)":3.23,"Temperature F":15}
+{"Datetime":"9:51 PM","wind_speed (m/s)":73.07,"Temperature C":24,"wind bearing":183,"wind speed (mph)":72.94,"Temperature F":46}
+{"Datetime":"5:42 PM","wind_speed (m/s)":66.97,"Temperature C":19,"wind bearing":113,"wind speed (mph)":19.28,"Temperature F":8}
+{"Datetime":"5:06 PM","wind_speed (m/s)":16.2,"Temperature C":93,"wind bearing":101,"wind speed (mph)":52.65,"Temperature F":18}
+{"Datetime":"11:56 AM","wind_speed (m/s)":62.18,"Temperature C":63,"wind bearing":180,"wind speed (mph)":83.28,"Temperature F":81}
+{"Datetime":"9:30 PM","wind_speed (m/s)":17.06,"Temperature C":75,"wind bearing":323,"wind speed (mph)":4.5,"Temperature F":14}
+{"Datetime":"4:08 PM","wind_speed (m/s)":53.48,"Temperature C":89,"wind bearing":34,"wind speed (mph)":27.18,"Temperature F":35}
+{"Datetime":"9:38 PM","wind_speed (m/s)":24.33,"Temperature C":40,"wind bearing":8,"wind speed (mph)":92.87,"Temperature F":68}
+{"Datetime":"6:21 AM","wind_speed (m/s)":59.68,"Temperature C":16,"wind bearing":279,"wind speed (mph)":54.81,"Temperature F":33}
+{"Datetime":"7:40 PM","wind_speed (m/s)":84.76,"Temperature C":34,"wind bearing":47,"wind speed (mph)":26.22,"Temperature F":14}
+{"Datetime":"8:03 AM","wind_speed (m/s)":41.45,"Temperature C":21,"wind bearing":109,"wind speed (mph)":62.7,"Temperature F":85}
+{"Datetime":"9:48 PM","wind_speed (m/s)":5.49,"Temperature C":89,"wind bearing":3,"wind speed (mph)":39.39,"Temperature F":32}
+{"Datetime":"2:16 PM","wind_speed (m/s)":27.51,"Temperature C":50,"wind bearing":62,"wind speed (mph)":80.2,"Temperature F":85}
+{"Datetime":"1:38 PM","wind_speed (m/s)":23.69,"Temperature C":18,"wind bearing":217,"wind speed (mph)":75.92,"Temperature F":48}
+{"Datetime":"4:54 AM","wind_speed (m/s)":96.49,"Temperature C":23,"wind bearing":190,"wind speed (mph)":9.41,"Temperature F":45}
+{"Datetime":"3:23 AM","wind_speed (m/s)":74.82,"Temperature C":86,"wind bearing":226,"wind speed (mph)":55.43,"Temperature F":98}
+{"Datetime":"6:16 PM","wind_speed (m/s)":9.34,"Temperature C":53,"wind bearing":184,"wind speed (mph)":64.08,"Temperature F":4}
+{"Datetime":"7:51 AM","wind_speed (m/s)":3.91,"Temperature C":-5,"wind bearing":301,"wind speed (mph)":41.44,"Temperature F":27}
+{"Datetime":"7:35 AM","wind_speed (m/s)":10.11,"Temperature C":84,"wind bearing":64,"wind speed (mph)":6.1,"Temperature F":70}
+{"Datetime":"5:02 AM","wind_speed (m/s)":4.18,"Temperature C":66,"wind bearing":52,"wind speed (mph)":70.8,"Temperature F":96}
+{"Datetime":"9:42 PM","wind_speed (m/s)":8.75,"Temperature C":21,"wind bearing":191,"wind speed (mph)":62.93,"Temperature F":55}
+{"Datetime":"12:02 PM","wind_speed (m/s)":85.34,"Temperature C":38,"wind bearing":156,"wind speed (mph)":7.85,"Temperature F":2}
+{"Datetime":"9:32 AM","wind_speed (m/s)":8.28,"Temperature C":9,"wind bearing":295,"wind speed (mph)":20.92,"Temperature F":86}
+{"Datetime":"3:25 PM","wind_speed (m/s)":8.04,"Temperature C":75,"wind bearing":99,"wind speed (mph)":72.12,"Temperature F":87}
+{"Datetime":"11:37 AM","wind_speed (m/s)":52.99,"Temperature C":43,"wind bearing":46,"wind speed (mph)":9.75,"Temperature F":73}
+{"Datetime":"12:47 AM","wind_speed (m/s)":34.08,"Temperature C":14,"wind bearing":15,"wind speed (mph)":76.31,"Temperature F":37}
